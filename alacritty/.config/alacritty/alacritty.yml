@@ -1,0 +1,40 @@
+colors:
+  # Default colors
+  primary:
+    background: '#202020'
+    foreground: '#f0f2e4'
+
+  # Cursor colors
+  cursor:
+    text:   '#2c2c2c'
+    cursor: '#d9d9d9'
+
+  # Normal colors
+  normal:
+    black:   '#171717'
+    red:     '#657b69'
+    green:   '#99b09d'
+    yellow:  '#ffdc78'
+    blue:    '#5b7a89'
+    magenta: '#74738d'
+    cyan:    '#448085'
+    white:   '#f0f2e4'
+
+  # Bright colors
+  bright:
+    black:   '#262626'
+    red:     '#9fafa1'
+    green:   '#b4ccb8'
+    yellow:  '#ffe69d'
+    blue:    '#8eaebf'
+    magenta: '#a8a7c2'
+    cyan:    '#548184'
+    white:   '#f0f2e4'
+
+font:
+    normal:
+        family: JetBrainsMono Nerd Font
+        style: Regular
+
+window:
+  opacity: 0.90

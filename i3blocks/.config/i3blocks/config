@@ -1,0 +1,96 @@
+# i3blocks config file
+#
+# Please see man i3blocks for a complete reference!
+# The man page is also hosted at http://vivien.github.io/i3blocks
+#
+# List of valid properties:
+#
+# align
+# color
+# command
+# full_text
+# instance
+# interval
+# label
+# min_width
+# name
+# separator
+# separator_block_width
+# short_text
+# signal
+# urgent
+
+# Global properties
+
+
+# Change $SCRIPT_DIR to the location of your scripts!
+command=$SCRIPT_DIR/$BLOCK_NAME
+separator_block_width=30
+markup=none
+
+
+[volume]
+color=#657b69
+label=
+command=$SCRIPT_DIR/volume/volume
+#label= 
+interval=1
+#signal=10
+#STEP=5%
+
+
+
+[memory]
+color=#657b69
+label=
+command=$SCRIPT_DIR/memory/memory
+interval=10
+
+
+[nvidia-smi]
+color=#657b69
+label=
+command=$SCRIPT_DIR/nvidia-smi/nvidia-smi
+interval=10
+separator=true
+
+
+[cpu_usage]
+color=#657b69
+label=
+command=$SCRIPT_DIR/cpu_usage/cpu_usage
+interval=10
+#min_width=CPU 100.00%
+separator=true
+
+
+[time]
+color=#657b69
+command=date '+%Y-%m-%d %H:%M:%S'
+interval=1
+
+
+#        
+## Thinkpad Adds 
+###
+
+#icons (shell:  ) 
+
+#[brightness]
+#color=#657b69
+#command=$SCRIPT_DIR/brightness/bin/brightness -a /sys/class/backlight/intel_backlight/actual_brightness -m /sys/class/backlight/intel_backlight/max_brightness
+#interval=persist
+
+#[wifi]
+#INTERFACE=wlp61s0
+#command=$SCRIPT_DIR/wifi/wifi
+#label=wifi:
+#interval=10
+#separator=false
+
+#[battery]
+#color=#657b69
+#command=$SCRIPT_DIR/battery/battery
+#label=⚡
+#interval=30
+
